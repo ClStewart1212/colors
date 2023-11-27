@@ -12,6 +12,9 @@ type UpdateRGBColorAction = {
   payload: { rgb: [number, number, number] };
 };
 
+type HexColor = `#${string}`;
+type RGBString = `rgb(${number},${number}, ${number})`;
+
 type ColorState = {
   hexColor: string;
 };
