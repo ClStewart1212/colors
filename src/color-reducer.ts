@@ -1,13 +1,13 @@
 import { rgb } from 'color-convert';
 
-type UpdateHexColorAction = {
+export type UpdateHexColorAction = {
   type: 'update-hex-color';
   payload: {
     hexColor: string;
   };
 };
 
-type UpdateRGBColorAction = {
+export type UpdateRGBColorAction = {
   type: 'update-rgb-color';
   payload: { rgb: [number, number, number] };
 };
